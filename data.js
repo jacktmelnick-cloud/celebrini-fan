@@ -1,23 +1,24 @@
 // ===== Edit me! Everything personal / swappable lives in this file. =====
 
 // Her first name. Leave "" and the site says "Made for you".
-const HER_NAME = "";
+const HER_NAME = "Logan";
 
 // Gallery cards, in order. Fangirl level climbs as she scrolls.
 // To add a photo: save it in img/ and set img: "img/yourfile.jpg".
+// pos = which part of the photo stays in frame. credit = small photo credit.
 // Cards without a photo (or with a broken one) show the drawn art instead.
 const GALLERY = [
-  { img: null, art: "🏒", level: 1, title: "Exhibit A", caption: "Oh he's cute. Normal reaction. I'm fine." },
-  { img: null, art: "🎓", level: 1, title: "BU Era", caption: "Youngest Hobey Baker winner EVER. At 17. I was doing algebra homework at 17." },
-  { img: null, art: "🦈", level: 2, title: "Draft Night", caption: "#1 overall pick. Also #1 in my heart. Sorry, I had to." },
-  { img: null, art: "🥹", level: 2, title: "That Smile", caption: "I'm only looking at the stats. The stats are smiling at me." },
-  { img: null, art: "🚨", level: 3, title: "Goal Celly", caption: "Every time he scores, I scream. My neighbors have filed a complaint." },
-  { img: null, art: "📈", level: 3, title: "115 Points", caption: "A Sharks single-season record. I have it on a mug. And a pillow." },
-  { img: null, art: "🇨🇦", level: 4, title: "Milan 2026", caption: "Led the Olympics in goals. I led the Olympics in crying at my TV." },
-  { img: null, art: "🥈", level: 4, title: "Silver Medal", caption: "Silver?? Robbery. I've drafted a strongly worded letter to the IOC." },
-  { img: null, art: "🌍", level: 5, title: "World's Best", caption: "IIHF Player of the Year. Not to be dramatic, but I'd let him break my ankles." },
-  { img: null, art: "💍", level: 5, title: "Future Plans", caption: "I've already picked our wedding venue: SAP Center, center ice, obviously." },
-  { img: null, art: "😵‍💫", level: 5, title: "Final Form", caption: "I am clinically unwell about this man. There is no cure. I don't want one." },
+  { img: "img/01.jpg", pos: "50% 30%", credit: "Leah Hennel / COC", art: "🏒", level: 1, title: "Exhibit A", caption: "Oh he's cute. Normal reaction. I'm fine." },
+  { img: "img/02.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🎓", level: 1, title: "The Prodigy", caption: "Youngest Hobey Baker winner EVER. At 17. I was doing algebra homework at 17." },
+  { img: "img/03.jpg", pos: "50% 40%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🦈", level: 2, title: "#1 Overall", caption: "#1 overall pick in 2024. Also #1 in my heart. Sorry, I had to." },
+  { img: "img/04.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🥹", level: 2, title: "That Smile", caption: "I'm only looking at the stats. The stats are smiling at me." },
+  { img: "img/05.jpg", pos: "30% 50%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🚨", level: 3, title: "Goal Mode", caption: "Every time he scores, I scream. My neighbors have filed a complaint." },
+  { img: "img/06.jpg", pos: "50% 50%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "📈", level: 3, title: "115 Points", caption: "A Sharks single-season record. I have it on a mug. And a pillow." },
+  { img: "img/07.jpg", pos: "62% 40%", credit: "Leah Hennel / COC", art: "🇨🇦", level: 4, title: "Milan 2026", caption: "Led the Olympics in goals. I led the Olympics in crying at my TV." },
+  { img: "img/08.jpg", pos: "60% 40%", credit: "NHL.com", art: "🥈", level: 4, title: "Silver Medal", caption: "Silver?? Robbery. I've drafted a strongly worded letter to the IOC." },
+  { img: "img/09.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🌍", level: 5, title: "World's Best", caption: "IIHF Player of the Year. Not to be dramatic, but I'd let him break my ankles." },
+  { img: "img/10.jpg", pos: "50% 30%", credit: "NHL.com / The Hollywood Reporter", art: "💍", level: 5, title: "Future Plans", caption: "I've already picked our wedding venue: SAP Center, center ice, obviously." },
+  { img: "img/11.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "😵‍💫", level: 5, title: "Final Form", caption: "I am clinically unwell about this man. There is no cure. I don't want one." },
 ];
 
 const LEVEL_NAMES = [

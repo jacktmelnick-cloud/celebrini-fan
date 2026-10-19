@@ -76,9 +76,13 @@
     $("p", card).textContent = g.caption;
     if (g.img) {
       const img = new Image();
-      img.loading = "lazy"; img.alt = g.title; img.src = g.img;
-      img.onerror = () => img.remove(); // fall back to the drawn art
+      img.loading = i < 2 ? "eager" : "lazy"; img.alt = g.title; img.src = g.img;
+      if (g.pos) img.style.objectPosition = g.pos;
+      const credit = document.createElement("small");
+      credit.className = "g-credit"; credit.textContent = g.credit ? "📷 " + g.credit : "";
+      img.onerror = () => { img.remove(); credit.remove(); }; // fall back to the drawn art
       $(".g-media", card).appendChild(img);
+      if (g.credit) $(".g-media", card).appendChild(credit);
     }
     track.appendChild(card);
   });
