@@ -7,20 +7,33 @@ const HER_NAME = "Logan";
 const POEM = {
   title: "A Poem for Logan",
   by: "from a fan who thinks you're the real MVP",
-  text: `Logan, you're the highlight of my day,
-The goal horn that blows my blues away.
-Some people chase the Cup all year,
-I'm just glad you're always here.
+  text: `To Logan, From the Penalty Box of My Heart
+by Macklin
 
-You're a power play when things feel slow,
-A breakaway with a warm, bright glow.
-You've got more heart than a captain's "C",
-And you make this whole fan club feel like family.
+Logan, my darling, you light up my world
+Like a goal light that’s spinning, all red and unfurled.
+I’ve stared down huge D-men who outweigh a truck,
+But one look from you and I’m ready to... play.
 
-So here's my pass, right on your tape,
-No icing, no offside, no escape:
-You're my favorite player, hands down,
-And the best fan in the whole darn town.`,
+They say that my stickhandling’s second to none,
+And I’ve got the stamina: three periods, not one.
+My coach says, “Stay low and keep driving the net,”
+I said, “Coach, that’s my Saturday plan, don’t you fret.”
+
+My gear bag smells awful, I’ll fully admit,
+But you still slide over and climb on my lap and just sit.
+You tug on my jersey and say, “Take that off,”
+And my heart goes full breakaway, no time to scoff.
+
+I’ll deke left, I’ll deke right, I’ll go in for the kill,
+I’ll take you to overtime, I’ll make you feel thrills.
+Forget the five-hole, forget the top shelf,
+Tonight I’m a forward, but you call the play yourself.
+
+So Logan, sweet Logan, let’s skip the post-game,
+No handshake line, baby, no need for the shame.
+They’ll give me two minutes for holding, it’s true,
+But the only box I want to end up in is... yours, through and through..`,
 };
 
 // Gallery cards, in order. Fangirl level climbs as she scrolls.
