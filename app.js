@@ -10,6 +10,15 @@
     $$(".her-name-inline").forEach(el => (el.textContent = HER_NAME));
   }
 
+  // ---------- poem ----------
+  $("#poem-title").textContent = POEM.title;
+  $("#poem-by").textContent = POEM.by;
+  POEM.text.trim().split(/\n\s*\n/).forEach(st => {
+    const p = document.createElement("p");
+    p.textContent = st.trim();
+    $("#poem-body").appendChild(p);
+  });
+
   // ---------- floating hearts ----------
   const heartLayer = $("#hearts");
   const heartChars = ["💖", "🦈", "✨", "💕", "🏒", "💗"];

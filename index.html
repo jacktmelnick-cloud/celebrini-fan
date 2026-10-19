@@ -42,6 +42,7 @@
     <div class="menu">
       <button class="menu-card" data-go="gallery"><span>📸</span><div><b>Fangirl Gallery</b><small>Watch your fangirl level climb</small></div></button>
       <button class="menu-card" data-go="swipe"><span>💘</span><div><b>Swoon or Snooze</b><small>Swipe dates, find your match</small></div></button>
+      <button class="menu-card" data-go="poem"><span>💌</span><div><b>A Poem for You</b><small>Something just for Logan</small></div></button>
       <button class="menu-card" data-go="quiz"><span>🧠</span><div><b>Trivia Quiz</b><small>How well do you know Macklin?</small></div></button>
     </div>
   </section>
@@ -80,11 +81,22 @@
     <div class="result-card hidden" id="quiz-result"></div>
   </section>
 
+  <!-- POEM -->
+  <section id="poem" class="screen">
+    <article class="poem-card">
+      <div class="poem-heart">💌</div>
+      <h2 class="script" id="poem-title"></h2>
+      <p class="poem-by" id="poem-by"></p>
+      <div class="poem-body" id="poem-body"></div>
+    </article>
+  </section>
+
   <nav id="tabbar" class="hidden">
     <button data-go="home" class="on"><span>🏠</span>Home</button>
     <button data-go="gallery"><span>📸</span>Gallery</button>
     <button data-go="swipe"><span>💘</span>Swipe</button>
     <button data-go="quiz"><span>🧠</span>Quiz</button>
+    <button data-go="poem"><span>💌</span>Poem</button>
   </nav>
 
   <script src="data.js"></script>

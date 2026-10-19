@@ -3,6 +3,26 @@
 // Her first name. Leave "" and the site says "Made for you".
 const HER_NAME = "Logan";
 
+// The poem tab. Put your own poem in `text`: a blank line starts a new stanza.
+const POEM = {
+  title: "A Poem for Logan",
+  by: "from a fan who thinks you're the real MVP",
+  text: `Logan, you're the highlight of my day,
+The goal horn that blows my blues away.
+Some people chase the Cup all year,
+I'm just glad you're always here.
+
+You're a power play when things feel slow,
+A breakaway with a warm, bright glow.
+You've got more heart than a captain's "C",
+And you make this whole fan club feel like family.
+
+So here's my pass, right on your tape,
+No icing, no offside, no escape:
+You're my favorite player, hands down,
+And the best fan in the whole darn town.`,
+};
+
 // Gallery cards, in order. Fangirl level climbs as she scrolls.
 // To add a photo: save it in img/ and set img: "img/yourfile.jpg".
 // pos = which part of the photo stays in frame. credit = small photo credit.

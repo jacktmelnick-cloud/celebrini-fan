@@ -170,11 +170,20 @@ button { font: inherit; color: inherit; border: 0; background: none; cursor: poi
   border: 1px dashed var(--pink); font-size: 15px; line-height: 1.4; }
 .q-next { margin: 16px auto 0; display: block; }
 
+/* poem */
+.poem-card { width: 100%; max-width: 420px; margin: 0 auto; padding: 28px 22px; border-radius: 26px; text-align: center;
+  background: linear-gradient(160deg, #fff6fb, #ffe3f1); color: var(--deep); border: 3px solid var(--pink-2);
+  box-shadow: 0 14px 34px rgba(0,0,0,.4); }
+.poem-heart { font-size: 44px; }
+.poem-card h2 { margin: 4px 0 6px; font-size: 30px; color: var(--teal); }
+.poem-by { margin: 0 0 18px; font-size: 14px; color: #b0457f; font-style: italic; }
+.poem-body p { margin: 0 0 18px; font-size: 18px; line-height: 1.6; white-space: pre-line; }
+
 /* tab bar */
 #tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; display: flex;
   height: calc(var(--nav-h) + var(--safe-b)); padding-bottom: var(--safe-b);
   background: rgba(2,28,31,.88); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,182,217,.25); }
-#tabbar button { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+#tabbar button { flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
   gap: 2px; font-size: 12px; color: #9cc7cb; }
 #tabbar button span { font-size: 22px; transition: transform .2s; }
 #tabbar button.on { color: var(--pink); font-weight: 700; }
