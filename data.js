@@ -8,17 +8,17 @@ const HER_NAME = "Logan";
 // pos = which part of the photo stays in frame. credit = small photo credit.
 // Cards without a photo (or with a broken one) show the drawn art instead.
 const GALLERY = [
-  { img: "img/01.jpg", pos: "50% 30%", credit: "Leah Hennel / COC", art: "🏒", level: 1, title: "Exhibit A", caption: "Oh he's cute. Normal reaction. I'm fine." },
-  { img: "img/02.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🎓", level: 1, title: "The Prodigy", caption: "Youngest Hobey Baker winner EVER. At 17. I was doing algebra homework at 17." },
-  { img: "img/03.jpg", pos: "50% 40%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🦈", level: 2, title: "#1 Overall", caption: "#1 overall pick in 2024. Also #1 in my heart. Sorry, I had to." },
-  { img: "img/04.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🥹", level: 2, title: "That Smile", caption: "I'm only looking at the stats. The stats are smiling at me." },
-  { img: "img/05.jpg", pos: "30% 50%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🚨", level: 3, title: "Goal Mode", caption: "Every time he scores, I scream. My neighbors have filed a complaint." },
-  { img: "img/06.jpg", pos: "50% 50%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "📈", level: 3, title: "115 Points", caption: "A Sharks single-season record. I have it on a mug. And a pillow." },
-  { img: "img/07.jpg", pos: "62% 40%", credit: "Leah Hennel / COC", art: "🇨🇦", level: 4, title: "Milan 2026", caption: "Led the Olympics in goals. I led the Olympics in crying at my TV." },
-  { img: "img/08.jpg", pos: "60% 40%", credit: "NHL.com", art: "🥈", level: 4, title: "Silver Medal", caption: "Silver?? Robbery. I've drafted a strongly worded letter to the IOC." },
-  { img: "img/09.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "🌍", level: 5, title: "World's Best", caption: "IIHF Player of the Year. Not to be dramatic, but I'd let him break my ankles." },
-  { img: "img/10.jpg", pos: "50% 30%", credit: "NHL.com / The Hollywood Reporter", art: "💍", level: 5, title: "Future Plans", caption: "I've already picked our wedding venue: SAP Center, center ice, obviously." },
-  { img: "img/11.jpg", pos: "50% 30%", credit: "Jesse Kornblum / Wikimedia Commons, CC BY-SA 4.0", art: "😵‍💫", level: 5, title: "Final Form", caption: "I am clinically unwell about this man. There is no cure. I don't want one." },
+  { img: "img/01.jpg", pos: "50% 35%", credit: "COC / olympic.ca", art: "🏒", level: 1, title: "Exhibit A", caption: "Oh he's cute. Normal reaction. I'm fine." },
+  { img: "img/02.jpg", pos: "50% 35%", credit: "San Jose Hockey Now", art: "🥹", level: 1, title: "That Smile", caption: "I'm only looking at the stats. The stats are smiling at me." },
+  { img: "img/03.jpg", pos: "50% 35%", credit: "NHL.com / The Hollywood Reporter", art: "📸", level: 2, title: "Cover Boy", caption: "Hollywood Reporter shoot. I'm not saying it's my lock screen. I'm saying it's my lock screen." },
+  { img: "img/04.jpg", pos: "50% 35%", credit: "CTV News", art: "🦈", level: 2, title: "#1 Overall", caption: "Picked first overall in 2024. Also first in my heart. Sorry, I had to." },
+  { img: "img/05.jpg", pos: "50% 35%", credit: "The Hockey News", art: "🎯", level: 3, title: "Locked In", caption: "That focused face. Every time he does it, my soul leaves my body." },
+  { img: "img/06.jpg", pos: "50% 35%", credit: "The Hockey News", art: "📈", level: 3, title: "115 Points", caption: "A Sharks single-season record. I have it on a mug. And a pillow." },
+  { img: "img/07.jpg", pos: "50% 0%", credit: "NHLPA", art: "🌟", level: 4, title: "Face of the NHL", caption: "From fan to face of the league. Meanwhile I'm still a fan. Of him. Specifically." },
+  { img: "img/08.jpg", pos: "50% 35%", credit: "NBC Bay Area", art: "👀", level: 4, title: "Staring Contest", caption: "He looked at the camera and I forgot my own name." },
+  { img: "img/09.jpg", pos: "50% 35%", credit: "theScore", art: "🌍", level: 5, title: "World's Best", caption: "IIHF Player of the Year. Not to be dramatic, but I'd let him break my ankles." },
+  { img: "img/10.jpg", pos: "50% 35%", credit: "AP via ClickOrlando", art: "🅲", level: 5, title: "Captain Cutie", caption: "The C looks so good on him. I've already made a vision board." },
+  { img: "img/11.jpg", pos: "50% 35%", credit: "NHL.com", art: "😵‍💫", level: 5, title: "Final Form", caption: "I've picked our wedding venue: SAP Center, center ice. I am clinically unwell. There is no cure." },
 ];
 
 const LEVEL_NAMES = [
@@ -74,11 +74,13 @@ const QUIZ = [
     fact: "First NHL player ever to score on a penalty shot at the Olympics." },
   { q: "What did the IIHF name him for 2025–26?", options: ["Best Rookie", "Male Player of the Year", "Fair Play Award", "Best Goalie"], answer: 1,
     fact: "IIHF Male Player of the Year. He was also Canada's captain at the 2026 Worlds." },
+  { q: "Which of these girls has Macklin gotten with? 👀", options: ["The Stanley Cup 🏆", "His hockey stick 🏒", "Logan 💖", "Sharkie the mascot 🦈"], answer: 2,
+    fact: "Logan, obviously. This is now official Sharks canon." },
 ];
 
 const QUIZ_RANKS = [
-  { min: 10, title: "Certified Celebrini Scholar 🎓", text: "Perfect score. You could teach a class on this man." },
-  { min: 7, title: "Top-Line Fangirl ⭐", text: "Elite knowledge. You definitely have notifications on." },
-  { min: 4, title: "Third-Line Fan 🏒", text: "Solid! A few more highlight reels and you'll be on the top line." },
+  { min: 11, title: "Certified Celebrini Scholar 🎓", text: "Perfect score. You could teach a class on this man." },
+  { min: 8, title: "Top-Line Fangirl ⭐", text: "Elite knowledge. You definitely have notifications on." },
+  { min: 5, title: "Third-Line Fan 🏒", text: "Solid! A few more highlight reels and you'll be on the top line." },
   { min: 0, title: "Bandwagon Rookie 🐣", text: "That's ok, everyone starts somewhere. Rewatch the gallery and try again!" },
 ];
